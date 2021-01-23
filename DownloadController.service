@@ -1,0 +1,15 @@
+[Unit]
+Description=Download Controller
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=volkant
+Restart=always
+RestartSec=1
+ExecStart=/home/volkant/Masaüstü/Projects/controller/download_control.py
+
+
+[Install]
+WantedBy=multi-user.target
+
